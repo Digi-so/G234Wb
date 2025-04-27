@@ -1,35 +1,31 @@
-body {
-    font-family: 'Arial', sans-serif;
-}
-/* Header Section */
-.header {
-    background-color: #1a3c34;
-    color: white;
-    padding: 100px 0;
-    text-align: center;
-}
-.header h1 {
-    font-size: 3rem;
-    font-weight: bold;
-}
-.header p {
-    font-size: 1.2rem;
-    margin: 20px 0;
-}
-.btn-hire {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px 30px;
-    margin-right: 10px;
-}
-.btn-contact {
-    background-color: transparent;
-    color: white;
-    border: 1px solid white;
-    padding: 10px 30px;
-}
-
+        /* Header Section */
+        .header {
+            background-color: #1a3c34;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .header p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+        .btn-hire {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            margin-right: 10px;
+        }
+        .btn-contact {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            padding: 10px 30px;
+        }
         /* Bio Section */
         .bio-section {
             padding: 50px 0;
@@ -58,24 +54,70 @@ body {
             border: none;
             padding: 10px 20px;
         }
-
-                /* Services Section */
-                .services-section {
-                    padding: 50px 0;
-                }
-                .services-section h2 {
-                    text-align: center;
-                    margin-bottom: 40px;
-                }
-                .service-card {
-                    padding: 20px;
-                    background-color: #fff;
-                    border: 1px solid #ddd;
-                    border-radius: 5px;
-                    text-align: center;
-                }
-                .service-card i {
-                    font-size: 2rem;
-                    color: #28a745;
-                    margin-bottom: 10px;
-                }
+        /* Services Section */
+        .services-section {
+            padding: 50px 0;
+        }
+        .services-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .service-card {
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .service-card i {
+            font-size: 2rem;
+            color: #28a745;
+            margin-bottom: 10px;
+        }
+        /* Skills Section */
+        .skills-section {
+            padding: 50px 0;
+            background-color: #f8f9fa;
+        }
+        .skills-section h2 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .progress {
+            height: 10px;
+            margin-bottom: 20px;
+        }
+        .progress-bar {
+            background-color: #28a745;
+        }
+        /* Stats Section */
+        .stats-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .stats-section h3 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .stats-section p {
+            color: #666;
+        }
+        /* Portfolio Section */
+        .portfolio-section {
+            padding: 50px 0;
+        }
+        .portfolio-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        /* Footer */
+        .footer {
+            background-color: #1a3c34;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer a {
+            color: white;
+            margin: 0 10px;
+        }
