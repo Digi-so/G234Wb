@@ -1,123 +1,121 @@
-        /* Header Section */
-        .header {
-            background-color: #1a3c34;
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-        }
-        .header h1 {
-            font-size: 3rem;
-            font-weight: bold;
-        }
-        .header p {
-            font-size: 1.2rem;
-            margin: 20px 0;
-        }
-        .btn-hire {
-            background-color: #28a745;
-            color: white;
-            border: none;
-            padding: 10px 30px;
-            margin-right: 10px;
-        }
-        .btn-contact {
-            background-color: transparent;
-            color: white;
-            border: 1px solid white;
-            padding: 10px 30px;
-        }
-        /* Bio Section */
-        .bio-section {
-            padding: 50px 0;
-            background-color: #f8f9fa;
-        }
-        .bio-section img {
-            width: 100%;
-            max-width: 300px;
-            margin-bottom: 20px;
-        }
-        .bio-section h2 {
-            font-size: 2rem;
-            font-weight: bold;
-        }
-        .bio-section p {
-            color: #666;
-        }
-        .social-icons a {
-            color: #28a745;
-            margin-right: 10px;
-            font-size: 1.5rem;
-        }
-        .btn-download {
-            background-color: #28a745;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-        }
-        /* Services Section */
-        .services-section {
-            padding: 50px 0;
-        }
-        .services-section h2 {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .service-card {
-            padding: 20px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            text-align: center;
-        }
-        .service-card i {
-            font-size: 2rem;
-            color: #28a745;
-            margin-bottom: 10px;
-        }
-        /* Skills Section */
-        .skills-section {
-            padding: 50px 0;
-            background-color: #f8f9fa;
-        }
-        .skills-section h2 {
-            font-size: 2rem;
-            font-weight: bold;
-        }
-        .progress {
-            height: 10px;
-            margin-bottom: 20px;
-        }
-        .progress-bar {
-            background-color: #28a745;
-        }
-        /* Stats Section */
-        .stats-section {
-            padding: 50px 0;
-            text-align: center;
-        }
-        .stats-section h3 {
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
-        .stats-section p {
-            color: #666;
-        }
-        /* Portfolio Section */
-        .portfolio-section {
-            padding: 50px 0;
-        }
-        .portfolio-section h2 {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        /* Footer */
-        .footer {
-            background-color: #1a3c34;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        .footer a {
-            color: white;
-            margin: 0 10px;
-        }
+:root {
+  --jungle-green: #29AB87;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+  background-color: #1A3C34;
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #2ECC71;
+}
+
+.header {
+  background-color: var(--jungle-green);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.btn-hire, .btn-contact, .btn-download {
+  background-color: var(--jungle-green);
+  color: white;
+  margin: 5px;
+}
+
+.hero-section {
+  background-color: #1A3C34;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.btn-hire:hover, .btn-contact:hover, .btn-download:hover {
+  background-color: #218f71;
+}
+
+.bio-section, .services-section, .skills-section, .stats-section, .portfolio-section {
+  padding: 50px 0;
+}
+
+.bio-section img, .portfolio-section img {
+  border-radius: 10px;
+}
+
+.service-card {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  background-color: var(--jungle-green);
+  color: white;
+}
+
+.progress-bar {
+  background-color: var(--jungle-green);
+}
+
+.portfolio-section img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-section img:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer a {
+  color: var(--jungle-green);
+  margin: 0 10px;
+}
+
+.social-icons a {
+  color: var(--jungle-green);
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
