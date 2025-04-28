@@ -1,19 +1,23 @@
 :root {
   --jungle-green: #29AB87;
+  --dark-teal: #1A3C34;
+  --light-gray: #f9f9f9;
 }
 
 body {
   font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
 }
 
 .navbar {
-  background-color: #1A3C34;
+  background-color: var(--dark-teal);
   padding: 15px 0;
 }
 
 .navbar-brand {
   font-size: 1.5rem;
-  color: white;
+  color: white !important;
   display: flex;
   align-items: center;
 }
@@ -23,76 +27,302 @@ body {
 }
 
 .navbar-nav .nav-link {
-  color: white;
+  color: white !important;
   margin-right: 15px;
+  font-size: 1.1rem;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #2ECC71;
+  color: var(--jungle-green) !important;
 }
 
-.header {
+.navbar-nav .btn-hire {
   background-color: var(--jungle-green);
-  color: white;
-  padding: 100px 0;
-  text-align: center;
+  color: white !important;
+  padding: 8px 20px;
+  border-radius: 25px;
 }
 
-.btn-hire, .btn-contact, .btn-download {
-  background-color: var(--jungle-green);
-  color: white;
-  margin: 5px;
+.navbar-nav .btn-hire:hover {
+  background-color: #218f71;
 }
 
 .hero-section {
-  background-color: #1A3C34;
+  background-color: var(--dark-teal);
   color: white;
-  padding: 50px 0;
-  text-align: center;
+  padding: 100px 0;
 }
 
 .hero-section h1 {
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .hero-section p {
   font-size: 1.2rem;
-  margin: 20px 0;
+  margin: 30px 0;
+  opacity: 0.9;
 }
 
-.btn-hire:hover, .btn-contact:hover, .btn-download:hover {
+.hero-section .btn-hire {
+  background-color: var(--jungle-green);
+  color: white;
+  padding: 12px 35px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+}
+
+.hero-section .btn-hire:hover {
   background-color: #218f71;
 }
 
-.bio-section, .services-section, .skills-section, .stats-section, .portfolio-section {
-  padding: 50px 0;
+.hero-section .btn-portfolio {
+  background-color: transparent;
+  color: white;
+  padding: 12px 35px;
+  border: 2px solid white;
+  border-radius: 25px;
+  font-size: 1.1rem;
 }
 
-.bio-section img, .portfolio-section img {
-  border-radius: 10px;
+.hero-section .btn-portfolio:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hero-section .hero-image {
+  max-width: 70%;
+}
+
+.w3l-about {
+  background-color: #fff;
+}
+
+.w3l-about .w3l-title-small {
+  color: var(--jungle-green);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.w3l-about .w3l-title-main {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.w3l-about p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.w3l-about .my-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.w3l-about .single-info {
+  flex: 1 1 45%;
+}
+
+.w3l-about .single-info span {
+  font-weight: 600;
+  margin-right: 10px;
+  color: #333;
+}
+
+.w3l-about .single-info p {
+  display: inline;
+  color: #666;
+}
+
+.w3l-about .single-info a {
+  color: #666;
+  text-decoration: none;
+}
+
+.w3l-about .single-info a:hover {
+  color: var(--jungle-green);
+}
+
+.w3l-about .follow-social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.w3l-about .follow-social h5 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.w3l-about .follow-social a {
+  color: #666;
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
+.w3l-about .follow-social a:hover {
+  color: var(--jungle-green);
+}
+
+.w3l-about .btn-hire {
+  background-color: var(--jungle-green);
+  color: white;
+  padding: 12px 35px;
+  border-radius: 25px;
+}
+
+.w3l-about .btn-hire:hover {
+  background-color: #218f71;
+}
+
+.w3l-about .btn-download {
+  background-color: transparent;
+  color: var(--jungle-green);
+  padding: 12px 35px;
+  border: 2px solid var(--jungle-green);
+  border-radius: 25px;
+}
+
+.w3l-about .btn-download:hover {
+  background-color: var(--jungle-green);
+  color: white;
+}
+
+.services-section h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
 }
 
 .service-card {
-  background: #f9f9f9;
-  padding: 30px;
+  background: var(--light-gray);
+  padding: 40px 20px;
   border-radius: 10px;
   text-align: center;
   transition: 0.3s;
 }
 
-.service-card:hover {
-  background-color: var(--jungle-green);
-  color: white;
+.service-card i {
+  color: var(--jungle-green);
 }
 
-.progress-bar {
+.service-card h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.service-card:hover {
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.services-section .more-services {
+  color: var(--jungle-green);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.services-section .more-services i {
+  margin-left: 5px;
+}
+
+.services-section .more-services:hover {
+  text-decoration: underline;
+}
+
+.w3l-skills .w3l-title-small {
+  color: var(--jungle-green);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.w3l-skills .w3l-title-main {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.w3l-skills p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.w3l-skills .progress-info {
+  margin-bottom: 20px;
+}
+
+.w3l-skills .progress-tittle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.w3l-skills .progress {
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+.w3l-skills .progress-bar {
   background-color: var(--jungle-green);
+}
+
+.w3l-whychooseus .icon-circle {
+  width: 60px;
+  height: 60px;
+  background-color: var(--jungle-green);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+}
+
+.w3l-whychooseus .detail h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.w3l-whychooseus .detail p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.w3l-stats-section {
+  background-color: #fff;
+}
+
+.w3l-stats-section .counter {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.w3l-stats-section h3 {
+  font-size: 1.3rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+.portfolio-section h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
 }
 
 .portfolio-section img {
   width: 100%;
-  height: 150px;
+  height: 200px;
   object-fit: cover;
   border-radius: 10px;
   transition: transform 0.3s ease;
@@ -103,19 +333,13 @@ body {
 }
 
 .footer {
-  background-color: #333;
+  background-color: var(--jungle-green);
   color: white;
-  padding: 30px 0;
-  text-align: center;
+  padding: 40px 0;
 }
 
-.footer a {
-  color: var(--jungle-green);
-  margin: 0 10px;
+.footer p {
+  margin: 0;
+  font-size: 1rem;
 }
 
-.social-icons a {
-  color: var(--jungle-green);
-  font-size: 1.5rem;
-  margin-right: 10px;
-}
