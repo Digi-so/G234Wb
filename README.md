@@ -1,4 +1,4 @@
-# John Doe - UI Portfolio
+# John Watson - UI Portfolio
 
 Welcome to our UI portfolio! This website showcases our work as  Web Developers and UI/UX Designer. It includes sections for  biography, services, skills, statistics, portfolio, and contact information.
 
@@ -17,3 +17,17 @@ Welcome to our UI portfolio! This website showcases our work as  Web Developers 
 - **Bootstrap 5**: For responsive design and ready-made components.
 - **Font Awesome**: For icons like LinkedIn, Facebook, Twitter, and Instagram.
 - **JavaScript**: Bootstrap JS for interactive components like the navbar toggle.
+To get started with this portfolio:
+
+1. **Clone the Repository**:
+2.  **Open the `index.html` file**:
+Simply open the `index.html` file in a browser to view the portfolio.
+
+3. **Modify Content**:
+- Update the `img` tags with your own pictures.
+- Change the text in the "About Me", "Services", and "Portfolio" sections to reflect your information and work.
+
+## Sections
+
+### Header Section
+The header contains a responsive navbar that includes links to different sections of the portfolio. It also includes a logo and the "Hire Me" button.
