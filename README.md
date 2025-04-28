@@ -4,7 +4,6 @@ Welcome to our UI portfolio! This website showcases our work as  Web Developers 
 
 ## Features
 
-- **Responsive Design**: The site is designed to work well on all screen sizes, including desktops, tablets, and mobile devices.
 - **Services Section**: Showcases the services I offer, including web development, app development, and photography.
 - **Skills Section**: Displays the progress of my featured skills with progress bars.
 - **Portfolio Section**: Highlights my past projects with visually appealing images.
